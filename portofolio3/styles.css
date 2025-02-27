@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+body {
+    font-family: "Lexend", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    background-color: #003b2b;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo img {
+    width: 60px;
+}
+
+nav .nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav-links li {
+    margin: 0 15px;
+}
+
+nav .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+nav .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px;
+}
+
+
+/* Responsive for mobile devices */
+@media (max-width: 768px) {
+    nav .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    nav .nav-links.active {
+        display: flex;
+    }
+
+    nav .hamburger {
+        display: flex;
+    }
+}
+
+#home {
+    padding: 2em;
+    background-color: rgba(0, 59, 43, 1);
+    background-image: linear-gradient(180deg, rgba(0, 59, 43, 1) 0%, rgba(255, 255, 255, 1) 91%);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 250px;
+    border-radius: 40% 0% 40% 0%;
+    margin-right: 20px;
+    box-shadow: 10px 8px 43px -18px rgba(0, 89, 79, 1);  
+}
+
+.profile-text {
+    max-width: 600px;
+    text-align: left; 
+    color: #003023;  
+}
+.profile-text h2 {
+    margin: 0;
+    font-size: 50px;
+    transition: 0.4s;
+}
+.profile-text h2:hover {
+   text-decoration: underline;
+   color: rgb(255, 255, 255);
+}
+
+.sosial-media {
+    margin-top: 10px;
+}
+
+.sosial-media img {
+    width: 24px;
+    height: 24px;
+}
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    height: 100vh; 
+    justify-content: center;
+
+.skills-text h2 {
+    font-size: 50px;
+    text-decoration: underline;
+    color: #003b2b;
+}
+
+.skills-text p {
+    font-size: 30px;
+    color: #003b2b;
+}
+.skills-pic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    width: 100%;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.skills-pic img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 10px 8px 43px -18px rgb(0, 0, 0);
+    margin-bottom: 10px; 
+    outline: 1px solid #003b2b;
+    opacity: 0.6;
+    transition: outline 0.3s ease 0s;
+    transition: opacity 0.3s ease 0s;
+    transition: transform 0.3s ease 0s;
+}
+.skills-pic img:hover {
+    outline: 6px solid #003b2b;
+    opacity: 1;
+    transform: scale(1.1);
+}
+}
+
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Tombol tidak terlihat pada awalnya */
+    background-color: #00966e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease 0s;
+    transition: color 0.3s ease 0s;
+}
+
+#backToTopBtn:hover {
+    background-color: #45ffb5;
+    color: #003b2b;
+}
+@media (max-width: 768px) {
+    .skills-pic {
+        grid-template-columns: 1fr; /* Tampilkan satu kolom pada layar kecil */
+        gap: 10px; /* Kurangi jarak antara gambar pada layar kecil */
+    }
+    
+    .skills-pic img {
+        max-width: 100%; /* Pastikan gambar menyesuaikan dengan lebar layar kecil */
+    }
+}
+
+#contact {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 20px;
+    -webkit-box-shadow: -3px 15px 50px -14px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -3px 15px 50px -14px rgba(0, 0, 0, 1);
+    box-shadow: -3px 15px 50px -14px rgba(0, 0, 0, 1);
+}
+.contact-txt h2 {
+    font-size: 50px;
+    text-align: center;
+    color: #003b2b;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contactForm {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#contactForm label {
+    display: block;
+    margin-top: 10px;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea,
+#contactForm input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #003b2b;
+}
+
+#contactForm input[type="submit"] {
+    background-color: #003b2b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#contactForm input[type="submit"]:hover {
+    background-color: #00604d;
+}
+
+.social-media {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media p {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #003b2b;
+    font-weight: bold;
+}
+
+.social-media a {
+    display: flex;
+    align-items: left;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    color: #003b2b;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.footer {
+    text-align: center;
+    background-color: #003b2b;
+}
+
+.footer h2 {
+    font-weight: 600;
+    color: #f4fffc;
+    padding-top: 10px;
+}
+
+.footer p {
+    color: #ffffff;
+}
+
+.gallery-txt {
+    font-size: 35px;
+    text-align: center;
+    color: #003b2b;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.gallery-item {
+    position: relative;
+    width: 400px; /* Atur ulang ukuran kontainer */
+    height: fit-content;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 1px 3px 35px -9px rgba(0,0,0,0.63);
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.gallery-item:hover .description {
+    opacity: 1;
+}
+
