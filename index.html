@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="profile">
+            <img src="assets/images/profilee.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="profile-text">
+                <h2>Naufal Prasetyo.</h2>
+                <p>I am a student at SMKN 1 Majalengka, currently in Class X PPLG 1. I have skills in video editing and graphic design, and I am passionate about creating visually appealing and engaging content.</p>
+                <div class="sosial-media">
+                    <p>And this is my social media..</p>
+                    <a href="https://www.linkedin.com/in/naufal-prasetyo-343b6a334/" target="_blank"><img src="assets/images/linkedin-svgrepo-com.svg" alt=""></a>
+                    <a href="https://www.tiktok.com/@pllpprsst?is_from_webapp=1&sender_device=pc" target="_blank"><img src="assets/images/tiktok-svgrepo-com.svg" alt=""></a>
+                    <a href="https://www.instagram.com/palprast/" target="_blank"><img src="assets/images/instagram-logo-facebook-2-svgrepo-com.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="skills-text">
+            <h2>My Skills</h2>
+            <p>Some skills that I have...</p>
+            <div class="skills-pic">
+                <div class="image-container">
+                    <img src="assets/images/desain.jpg" alt="Design Graphic">
+                    <p>Design Graphic</p>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/typo.jpg" alt="Typography">
+                    <p>Typography</p>
+                </div>
+                <div class="image-container">
+                    <img src="assets/images/videoed.jpg" alt="Video Editing">
+                    <p>Video Editing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="gallery">
+        <div class="gallery-txt">
+            <h1>Gallery..</h1>
+        </div>
+        <div  class="gallery-container">
+        <div class="gallery-item">
+            <img src="assets/images/Basket.jpg" alt="Image 1">
+            <div class="description">Juara 2 Turnamen Bola Basket Tingkat SMP</div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/Happycamp.jpg" alt="Image 2">
+            <div class="description">Multimedia Happycamp NETIMA 2023</div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/Ninegrade.jpg" alt="Image 3">
+            <div class="description">9D NETIMA 23-24</div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/Painting.jpg" alt="Image 4">
+            <div class="description">Juara 1 Lomba Menggambar JAMRAN-23</div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/OSIS.jpg" alt="Image 5">
+            <div class="description">OSIS NETIMA 23-24</div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/Reportase.jpg" alt="Image 6">
+            <div class="description">Juara 1 Lomba Reportase JAMRAN-23</div>
+        </div>
+    </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="contact-txt">
+        <h2>Contact Me</h2>
+    </div>
+        <div class="contact-container">
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <input type="submit" value="Send">
+            </form>
+            <div class="social-media">
+                <p>Follow me on:</p>
+                <a href="https://www.linkedin.com/in/naufal-prasetyo-343b6a334/" target="_blank">
+                    <img src="assets/images/linkedin-svgrepo-com.svg" alt="Facebook" class="social-icon">
+                    LinkedIn
+                </a>
+                <a href="https://www.tiktok.com/@pllpprsst?is_from_webapp=1&sender_device=pc" target="_blank">
+                    <img src="assets/images/tiktok-svgrepo-com.svg" alt="Twitter" class="social-icon">
+                    Tiktok
+                </a>
+                <a href="https://www.instagram.com/palprast/" target="_blank">
+                    <img src="assets/images/instagram-logo-facebook-2-svgrepo-com.svg" alt="Instagram" class="social-icon">
+                    Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <button id="backToTopBtn"><img src="assets/images/arrow.svg" alt=""></button>
+
+    <div class="footer">
+    <h2>Stay Sane..</h2>
+    <p>Copyright &copy;2025 Naufal Prasetyo</p>
+    <p>------------------------------------</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
